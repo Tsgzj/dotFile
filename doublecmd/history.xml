@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <History>
+    <Navigation>
+      <Item>/home/tsgzj/Downloads/otf/static/</Item>
+      <Item>/home/tsgzj/Downloads/otf/</Item>
+      <Item>/home/tsgzj/Downloads/</Item>
+      <Item>/home/tsgzj/</Item>
+      <Item>/home/</Item>
+      <Item>/</Item>
+      <Item>/usr/</Item>
+      <Item>/usr/lib/</Item>
+      <Item>/usr/lib/doublecmd/</Item>
+      <Item>/home/tsgzj/Downloads/chili/</Item>
+      <Item>/home/tsgzj/Git/</Item>
+      <Item>/home/tsgzj/Photos/</Item>
+      <Item>/home/tsgzj/windows/</Item>
+    </Navigation>
+    <CommandLine>
+      <Item>/home</Item>
+      <Item>/home/Git</Item>
+      <Item>~/Git</Item>
+    </CommandLine>
+    <FileMask>
+      <Item>*.*</Item>
+    </FileMask>
+    <SearchText/>
+    <SearchTextPath/>
+    <ReplaceText/>
+    <ReplaceTextPath/>
+    <CreateDirectories/>
+    <RenameNameMask/>
+    <RenameExtMask/>
+    <SearchDirectories/>
+    <SearchExcludeFiles/>
+    <SearchExcludeDirectories/>
+  </History>
+</doublecmd>

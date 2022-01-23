@@ -1,0 +1,5 @@
+{ 
+ "default.route.alsa_card.pci-0000:26:00.1:output:hdmi-output-2": { "mute": false , "volumes": [ 0.069959, 0.069959 ], "channels": [ "FL", "FR" ] }
+ "default.route.alsa_card.pci-0000:28:00.3:output:iec958-stereo-output": { "mute": false , "volumes": [ 0.999588, 0.999588 ], "channels": [ "FL", "FR" ] }
+ "default.route.alsa_card.pci-0000:28:00.3:input:analog-input-front-mic": { "mute": true , "volumes": [ 0.000159, 0.000159 ], "channels": [ "FL", "FR" ] }
+}

@@ -1,0 +1,8 @@
+{
+ "default.route.alsa_card.pci-0000_26_00.1:profile:off": [ ],
+ "default.route.alsa_card.pci-0000_28_00.3:profile:off": [ ],
+ "default.route.alsa_card.pci-0000_26_00.1:profile:output:hdmi-stereo-extra2": [ ],
+ "default.route.alsa_card.pci-0000_28_00.3:profile:output:iec958-stereo": [ ],
+ "default.route.bluez_card.38_F3_2E_E6_5E_1C:profile:a2dp-sink-sbc": [ "headset-output" ],
+ "default.route.bluez_card.38_F3_2E_E6_5E_1C:output:headset-output": { "mute": false, "volumes": [ 0.012140 ], "channels": [ "MONO" ], "latencyOffsetNsec": 0 }
+}

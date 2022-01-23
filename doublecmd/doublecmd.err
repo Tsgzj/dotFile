@@ -1,0 +1,18 @@
+--------------- 10-12-2021, 21:34:06 ---------------
+| DC v1.0.1 beta Rev. 35 -- x86_64-Linux-gtk2
+| Arch Linux \r (\l) -- GTK 2.24.33 | PID 638088
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $0000000000492560 in /usr/lib/doublecmd/doublecmd
+  $00000000007BAF82 line 7689, column 3 of grids.pas in /usr/lib/doublecmd/doublecmd
+  $00000000007B7DB1 line 6718, column 9 of grids.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000ADCC96 line 2027, column 3 of fileviews/ucolumnsfileview.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000433D1A in /usr/lib/doublecmd/doublecmd
+  $00000000005F17F5 line 5411, column 28 of include/wincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $00000000007B1C1A line 4845, column 31 of grids.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000792398 line 112, column 36 of lclmessageglue.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000773DF5 line 3780, column 68 of gtk2proc.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000781A4A line 1319, column 3 of gtk2callback.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000782029 line 1492, column 3 of gtk2callback.inc in /usr/lib/doublecmd/doublecmd
+  $00007FDE044760A8 in /usr/lib/libgtk-x11-2.0.so.0
+

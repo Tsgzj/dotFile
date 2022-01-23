@@ -1,0 +1,3 @@
+{ 
+ "default.audio.sink": { "name": "alsa_output.pci-0000:28:00.3.iec958-stereo" }
+}

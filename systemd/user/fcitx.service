@@ -1,0 +1,8 @@
+[Unit]
+Description=fcitx as service
+After=sddm.service
+[Service]
+ExecStart=/usr/bin/fcitx5 -d
+ExecStop=pkill fcitx5
+[Install]
+WantedBy=sddm.service

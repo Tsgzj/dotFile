@@ -1,0 +1,5 @@
+[output VLDS-1]
+image=~/Photos/Wallpapers/snowfall.mp4
+filter=best
+scaling-mode=fill
+anchor=center

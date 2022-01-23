@@ -1,0 +1,50 @@
+* {
+	font-family: "Essential PragmataPro";
+	font-size: 16px;
+}
+
+window {
+	margin: 0;
+	background-color: --wofi-color15;
+}
+
+#input {
+	border: 4px;
+	border-radius: 0;
+	margin-bottom: 4px;
+	background-color: --wofi-color15;
+}
+
+#input:focus {
+	outline: none;
+	border: none
+}
+
+#inner-box {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+#outer-box {
+	margin: 20px;
+}
+
+#text {
+	margin: 8px;
+}
+
+#entry {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#entry:selected {
+	outline: none;
+	border-radius: 0;
+	background-color: --wofi-color1;
+}
+
+#entry:selected #text {
+	background-color: --wofi-color1;
+	color: --wofi-color15;
+}
