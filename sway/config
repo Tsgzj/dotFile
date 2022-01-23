@@ -20,8 +20,8 @@ set $term alacritty
 # on the original workspace that the command was run on.
 
 ## Gaps
-gaps outer 0
-gaps inner 10
+gaps outer 3
+gaps inner 2
 
 default_border pixel 3
 
