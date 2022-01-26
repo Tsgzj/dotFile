@@ -1,8 +1,0 @@
-[Unit]
-Description=Rofi-greenclip daemon
-
-[Service]
-ExecStart=/usr/bin/greenclip daemon
-
-[Install]
-WantedBy=default.target
