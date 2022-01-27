@@ -56,6 +56,7 @@ exec swayidle -w \
 exec --no-startup-id wal -i $HOME/Photos/Wallpapers -n
 exec --no-startup-id feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
+exec_always autotiling
 
 
 #

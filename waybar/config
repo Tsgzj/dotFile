@@ -12,7 +12,8 @@
     },
     "sway/window": {
         "format": " {}  ",
-        "max-length": 120
+        "max-length": 60,
+        "min-length": 30
     },
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",
