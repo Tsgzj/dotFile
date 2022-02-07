@@ -15,9 +15,6 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
 
 ## Gaps
 gaps outer 3
@@ -50,11 +47,14 @@ client.unfocused $color2 $background $foreground $color3 $background
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 120 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc' \
+         timeout 300 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc'
 exec --no-startup-id wal -i $HOME/Photos/Wallpapers -n
 exec --no-startup-id feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+exec wl-paste -t text --watch clipman store
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
+exec clipman restore
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 exec_always autotiling
 
@@ -84,12 +84,15 @@ exec_always autotiling
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi -I --show=drun 
+    bindsym $mod+d exec wofi -I --show=drun
+
+    # Clipman
+    bindsym $mod+c exec clipman pick -t wofi
 
     # tab menu
-    bindsym $mod+Tab exec $rofi tabmenu
+    bindsym $mod+Tab exec wofi tabmenu
     bindsym $mod+Shift+e exec ~/.config/wofi/scripts/powermenu.sh
-    bindsym $mod+c exec $rofi clipboard
+    # bindsym $mod+c exec wofi clipboard
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
