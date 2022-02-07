@@ -52,7 +52,7 @@ exec swayidle -w \
          before-sleep 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc'
 exec --no-startup-id wal -i $HOME/Photos/Wallpapers -n
 exec --no-startup-id feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
-exec wl-paste -t text --watch clipman store
+exec wl-paste -t text --watch clipman store -P
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec clipman restore
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
