@@ -50,19 +50,14 @@ client.unfocused $color2 $background $foreground $color3 $background
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
+         timeout 120 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep 'swaylock -e --screenshots --effect-blur 7x8 --clock --indicator --ring-color bb00cc'
 exec --no-startup-id wal -i $HOME/Photos/Wallpapers -n
 exec --no-startup-id feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 exec_always autotiling
 
-
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
 #
