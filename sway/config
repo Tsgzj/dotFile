@@ -55,6 +55,7 @@ exec --no-startup-id feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
 exec wl-paste -t text --watch clipman store -P
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec clipman restore
+exec env RUST_BACKSTRACE=1 RUST_LOG=swayr=debug swayrd > /tmp/swayrd.log 2>&1
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 exec_always autotiling
 
@@ -90,9 +91,8 @@ exec_always autotiling
     bindsym $mod+c exec clipman pick -t wofi
 
     # tab menu
-    bindsym $mod+Tab exec wofi tabmenu
+    bindsym $mod+Tab exec env RUST_BACKTRACE=1 swayr switch-workspace-or-window >> /tmp/swayr.log 2>&1
     bindsym $mod+Shift+e exec ~/.config/wofi/scripts/powermenu.sh
-    # bindsym $mod+c exec wofi clipboard
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
